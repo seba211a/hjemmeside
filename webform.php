@@ -15,7 +15,7 @@ if(isset($_POST["email"]) && $_POST["email"] != "") {
         $body .= "Email: ".$email. "\r\n";
         $body .= "Message: ".$message. "\r\n";
         
-        //mail($to,$body);
+        mail($to,$body);
 
         $message_sent = true;
     }
