@@ -19,7 +19,7 @@
             <li><a href="index.html" class="cool-link">Forside</a></li>
             <li class="active"><a href="portefølje.html" class="active">Portefølje</a></li>
             <li><a href="priser.html" class="cool-link">Priser</a></li>
-            <li><a href="priser.html#fancy-form" class="cool-link">Kontakt os</a></li>
+            <li><a href="priser.html#kontos" class="cool-link">Kontakt os</a></li>
         </ul>
         <div class="hej">
             <div class="line1"></div>
@@ -34,14 +34,13 @@
             <h3>Vi er website udviklere!</h3>
             <a href="#os" class="btn">Hvad kan vi?</a>
         </div>
-        <div id="os"></div>
     </section>
-
+    <div id="os"></div>
     <section class="about">
         <div class="heading">
             <h2>Om os</h2>
         </div>
-        <div class="content">
+        <div class="content"> 
             <div class="contentBx w50">
                 <h3>Vi er website udviklere!</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, animi? Facilis soluta voluptate in
@@ -75,6 +74,9 @@
                 <img src="img/computer.png" alt="">
                 <h2>Web Development</h2>
                 <p>Vi tilbyder selvfølgelig også Web Development, som går hånd i hånd med Web Design. Vi er begge to meget erfarne med kodning og programmering af hjemmesider, da vi er specialiseret i HTML, CSS og Javascript. For at oversætte dette til en normal person, som ikke koder, betyder dette, at vi kan lave gode hjemmesider.</p>
+            </div>
+            <div class="heading hvid">
+                <a href="priser.html" class="btn">Gå til priser</a>
             </div>
         </div>
     </section>
@@ -117,20 +119,22 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, optio officia? Blanditiis possimus minima, pariatur eaque nemo ipsa. Excepturi assumenda nisi vitae cum corrupti repudiandae recusandae quam consequuntur obcaecati eveniet.</p>
                 <h3>Person<br><span>Job</span></h3>
             </div>
-        </div>
+        </div>    
     </section>
     <script type="text/javascript">
-        window.addEventListener('scroll', function() {
-            var header = document.querySelector('header');
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('nav');
             header.classList.toggle('sticky', window.scrollY > 0);
-        })
+        })   
     </script>
-    <footer>
-        <div class="footer">
-            <div class="footer-bottom">
-                <p>&copy Copyright 2020 | sebogmaw.dk, alle rettigheder forbeholdes</p>
-                <p>TLF: 52 50 40 88</p>
+         <footer>
+            <div class="footer">
+                <div class="footer-bottom">
+                    <p>&copy Copyright 2020 | sebogmaw.dk, alle rettigheder forbeholdes</p>
+                    <p>TLF: 52 50 40 88</p>
+                </div>
             </div>
-        </div>
-    </footer>
-</body></html>
+        </footer>
+</body>
+
+</html>
