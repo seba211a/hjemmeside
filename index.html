@@ -25,7 +25,8 @@
             <li class="active"><a href="index.html" class="active">Forside</a></li>
             <li><a href="portefølje.html" class="cool-link">Portefølje</a></li>
             <li><a href="priser.html" class="cool-link">Priser</a></li>
-            <li><a href="priser.html#fancy-form" class="cool-link">Kontakt os</a></li>
+            <li><a href="priser.html#kontos" class="cool-link">Kontakt os</a></li>
+
         </ul>
         <div class="hej">
             <div class="line1"></div>
@@ -46,12 +47,16 @@
             <img class="forside" src="https://cdn.pixabay.com/photo/2019/10/07/10/30/programming-4532296_960_720.jpg" alt="">
         </div>
     </div>
-    <section id="mere">
+    <section id="mere"> 
         <h1>Hvem er vi?</h1>
-        <p>Vi er to unge drenge, Marius Christensen og Sebastian Villumsen, som nyder at udvikle hjemmesider fra bunden.</p>
+            <p>Vi er to unge drenge, Marius Christensen og Sebastian Villumsen, som nyder at udvikle hjemmesider fra bunden.</p>
         <div id="center">
-            <img class="logo1" src="img/hej.jpg" alt="">
-            <img class="logo1" src="https://videnskab.dk/files/articles_inline/dovendyr.jpg" alt="">
+            <div class="logo1">
+                <img src="img/hej.jpg" alt="">
+            </div>
+            <div class="logo1">
+                <img src="https://videnskab.dk/files/articles_inline/dovendyr.jpg" alt="">
+            </div>
         </div>
     </section>
     <section class="sec1">
@@ -67,9 +72,15 @@
                 VI ER ALTID KLAR
             </span>
     </section>
-
+    
     <section class="sec3"></section>
 
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('nav');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })   
+    </script>
     <footer>
         <div class="footer">
             <div class="footer-bottom">
