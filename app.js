@@ -20,3 +20,35 @@ const navSlide = () => {
 
 navSlide();
 
+
+
+
+
+// this is the target which is observed
+var target = document.querySelector('.gamer');
+
+// configure the intersection observer instance
+var intersectionObserverOptions = {
+  root: null,
+  rootMargin: '150px',
+  threshold: 1.0
+}
+    
+var observer = new IntersectionObserver(onIntersection, intersectionObserverOptions);
+
+// provide the observer with a target
+observer.observe(target);
+
+function onIntersection(entries){
+  entries.forEach(entry => {
+    console.clear();
+    console.log(entry.intersectionRatio)
+    target.classList.toggle('visible', entry.intersectionRatio > 0);
+    
+    // Are we in viewport?
+    if (entry.intersectionRatio > 0) {
+      // Stop watching 
+      // observer.unobserve(entry.target);
+    }
+  });
+}
